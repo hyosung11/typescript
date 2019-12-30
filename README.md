@@ -21,3 +21,6 @@ TypeScript Practice from The Complete Junior to Senior Web Developer Roadmap (20
 
 ### Type Assertion
 - https://basarat.gitbooks.io/typescript/docs/types/type-assertion.html
+
+### Definitely Typed https://definitelytyped.org/
+- Third Party Libraries 

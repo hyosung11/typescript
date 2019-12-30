@@ -48,3 +48,30 @@ var fightRobotArmy2 = function (robots) {
 };
 var dog = {};
 dog.count;
+// Function
+var fightRobotArmy3 = function (robots) {
+    console.log('FIGHT');
+};
+var fightRobotArmy4 = function (robots) {
+    console.log('FIGHT');
+    return 5;
+};
+// Class (default set to public; if private can only be accessed within class)
+var Animal = /** @class */ (function () {
+    function Animal(sound) {
+        this.sing = 'falalalalala';
+        this.sing = sound;
+    }
+    Animal.prototype.greet = function () {
+        return "Hello " + this.sing;
+    };
+    return Animal;
+}());
+var lion = new Animal('ROOAARR');
+lion.sing;
+// Union
+var confused = true;
+// type inference
+var x = 4;
+x = 'hello';
+// typescript.ts:106:1 - error TS2322: Type '"hello"' is not assignable to type 'number'.

@@ -72,3 +72,36 @@ interface CatArmy {
 
 let dog = {} as CatArmy
 dog.count
+
+// Function
+let fightRobotArmy3 = (robots: RobotArmy): void => {
+  console.log('FIGHT')
+}
+
+let fightRobotArmy4 = (robots: {count: number, type: string, magic: string}): number => {
+    console.log('FIGHT')
+    return 5
+}
+
+// Class (default set to public; if private can only be accessed within class)
+class Animal {
+  sing: string = 'falalalalala'
+  constructor(sound: string) {
+    this.sing = sound;
+  }
+
+  greet(): string {
+    return `Hello ${this.sing}`
+  }
+}
+
+let lion = new Animal('ROOAARR')
+lion.sing
+
+// Union
+let confused: string | number | boolean = true;
+
+// type inference
+let x: number = 4;
+x = 'hello';
+// typescript.ts:106:1 - error TS2322: Type '"hello"' is not assignable to type 'number'.
